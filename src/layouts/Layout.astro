@@ -13,6 +13,7 @@ import "../styles/global.css";
 <title>Mehrab Jalilian | AI Engineer &amp; Researcher</title>
 <meta name="description" content="Mehrab Jalilian is an AI engineer and researcher working on machine learning, graph neural networks, privacy-preserving learning, LLM systems, and MLOps." />
 <meta name="author" content="Mehrab Jalilian" />
+<meta property="og:locale" content="en_US" />
 <link rel="canonical" href="https://mehrabjalilian.site/" />
 
 <meta property="og:site_name" content="Mehrab Jalilian" />
@@ -32,15 +33,52 @@ import "../styles/global.css";
 <script type="application/ld+json">
 {JSON.stringify({
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Mehrab Jalilian",
-  "url": "https://mehrabjalilian.site/",
-  "jobTitle": "AI Engineer and Researcher",
-  "description": "AI engineer and researcher working on machine learning, graph neural networks, privacy-preserving learning, LLM systems, and MLOps.",
-  "sameAs": [
-    "https://github.com/mehrabJA",
-    "https://www.linkedin.com/in/mehrab-jalilian",
-    "https://t.me/MEhRAb123456790"
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mehrabjalilian.site/#website",
+      "name": "Mehrab Jalilian",
+      "url": "https://mehrabjalilian.site/",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://mehrabjalilian.site/#person"
+      }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://mehrabjalilian.site/#profile",
+      "url": "https://mehrabjalilian.site/",
+      "name": "Mehrab Jalilian | AI Engineer & Researcher",
+      "isPartOf": {
+        "@id": "https://mehrabjalilian.site/#website"
+      },
+      "mainEntity": {
+        "@id": "https://mehrabjalilian.site/#person"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://mehrabjalilian.site/#person",
+      "name": "Mehrab Jalilian",
+      "alternateName": "مهراب جلیلیان",
+      "url": "https://mehrabjalilian.site/",
+      "jobTitle": "AI Engineer and Researcher",
+      "description": "Mehrab Jalilian is an AI engineer and researcher working on machine learning, graph neural networks, privacy-preserving learning, LLM systems, and MLOps.",
+      "knowsAbout": [
+        "Machine Learning",
+        "Graph Neural Networks",
+        "Federated Learning",
+        "Differential Privacy",
+        "Large Language Models",
+        "MLOps",
+        "AI Systems"
+      ],
+      "sameAs": [
+        "https://github.com/mehrabJA",
+        "https://www.linkedin.com/in/mehrab-jalilian",
+        "https://t.me/MEhRAb123456790"
+      ]
+    }
   ]
 })}
 </script>
