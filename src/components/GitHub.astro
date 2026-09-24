@@ -1,0 +1,88 @@
+---
+const repos = [
+  {
+    id: "01",
+    kind: "SYSTEMS",
+    name: "MemoryLatencyAnalyzer",
+    href: "https://github.com/mehrabJA/MemoryLatencyAnalyzer",
+    summary: "Linux/C++17 tooling for measuring memory latency, cache hierarchy behavior, and memory bandwidth.",
+    tags: ["C++17", "LINUX", "BENCHMARKING"]
+  },
+  {
+    id: "02",
+    kind: "COMPUTER VISION",
+    name: "Persian Car Licence Plate Detection And Recognition",
+    href: "https://github.com/mehrabJA/Persian-Car-Licence-Plate-Detection-and-Recognition",
+    summary: "An end-to-end computer-vision workflow for Persian license plate detection, character segmentation, and recognition.",
+    tags: ["YOLOV7", "OCR", "VISION"]
+  },
+  {
+    id: "03",
+    kind: "NLP / DEPLOYMENT",
+    name: "Snapfood Reviews Sentiment Classification",
+    href: "https://github.com/mehrabJA/snapfood-reviews-sentiment-classification-NLP",
+    summary: "Persian sentiment classification with Hazm preprocessing, classical ML, Transformers, FastAPI, and Docker.",
+    tags: ["HAZM", "TRANSFORMERS", "FASTAPI"]
+  },
+  {
+    id: "04",
+    kind: "DEEP LEARNING",
+    name: "Chest MRI Classification CNN",
+    href: "https://github.com/mehrabJA/Chest_MRI_Classification_CNN",
+    summary: "Image-classification experiments covering preprocessing, augmentation, evaluation, and error analysis.",
+    tags: ["CNN", "JUPYTER", "IMAGING"]
+  },
+  {
+    id: "05",
+    kind: "ML / RESEARCH",
+    name: "Brain-Disease",
+    href: "https://github.com/mehrabJA/Brain-Disease",
+    summary: "Notebook-based machine-learning work centered on a brain-disease classification workflow.",
+    tags: ["PYTHON", "ML", "JUPYTER"]
+  },
+  {
+    id: "06",
+    kind: "DATA / ANALYTICS",
+    name: "SIB Company — Sales Analysis",
+    href: "https://github.com/mehrabJA/SIB_company",
+    summary: "Sales-data analysis covering cleaning, cancellation patterns, customer analysis, time-based trends, and visualization.",
+    tags: ["PANDAS", "NUMPY", "EDA"]
+  }
+];
+---
+<section class="section github-showcase" id="github">
+  <div class="eyebrow">06 — GitHub</div>
+  <div class="github-head">
+    <div>
+      <h2 class="github-title">Code that<br><em>stays visible.</em></h2>
+    </div>
+    <div class="github-lead">
+      Selected public repositories across systems, machine learning, NLP, computer vision, and data analysis.
+      <br>
+      <a class="github-profile-link" href="https://github.com/mehrabJA" target="_blank" rel="noopener noreferrer">OPEN GITHUB PROFILE ↗</a>
+    </div>
+  </div>
+
+  <div class="github-grid">
+    {repos.map((repo) => (
+      <a class="github-card" href={repo.href} target="_blank" rel="noopener noreferrer">
+        <div class="github-card-top">
+          <span class="github-index">{repo.id}</span>
+          <span class="github-kind">{repo.kind}</span>
+        </div>
+        <h3 class="github-name">{repo.name}</h3>
+        <p class="github-summary">{repo.summary}</p>
+        <div class="github-tags">
+          {repo.tags.map((tag) => <span class="github-tag">{tag}</span>)}
+        </div>
+        <span class="github-open">VIEW REPOSITORY ↗</span>
+      </a>
+    ))}
+  </div>
+
+  <div class="github-strip">
+    <span>REPOSITORY SIGNAL</span>
+    <strong>Systems / ML / NLP / Vision / Analytics</strong>
+    <a href="https://github.com/mehrabJA?tab=repositories" target="_blank" rel="noopener noreferrer">VIEW ALL REPOSITORIES ↗</a>
+  </div>
+</section>
