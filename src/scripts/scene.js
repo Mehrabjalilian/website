@@ -81,7 +81,7 @@ function initNav(){
     });
   }
 
-  const navSections = ['home','about','projects','research','github','blog','contact'].map(id=>qs('#'+id)).filter(Boolean);
+  const navSections = ['home','about','projects','research','contact'].map(id=>qs('#'+id)).filter(Boolean);
   const navIO = new IntersectionObserver(entries=>{
     entries.forEach(en=>{ if(en.isIntersecting && en.intersectionRatio>.38) setNavActive(en.target.id); });
   }, { threshold:[.38,.6] });

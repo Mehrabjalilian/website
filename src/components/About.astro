@@ -1,1 +1,397 @@
-<section class="section" id="about"><div class="eyebrow">02 — About</div><div class="section-grid" style="margin-top:8vh"><div class="big-copy reveal">I'm Mehrab Jalilian (مهراب جلیلیان), a computer engineering student and systems builder. I design ML pipelines, research privacy-preserving learning, and ship interfaces that make complex technology feel <em>alive.</em></div><div class="side-copy reveal">Based in Iran, working toward advanced research in AI and data systems.<br><br><strong>Current focus</strong><br>Federated learning · GNNs · differential privacy · LLM systems · MLOps</div></div></section>
+<section class="section about-section" id="about">
+  <div class="eyebrow">02 — About / Profile</div>
+
+  <div class="about-hero">
+    <div class="about-display reveal">
+      <span class="about-index">01</span>
+      <h2>I build systems that make <em>intelligence</em> useful.</h2>
+    </div>
+
+    <div class="about-card reveal">
+      <div class="about-card-top">
+        <div>
+          <div class="about-label">MEHRAB JALILIAN</div>
+          <div class="about-role">AI ENGINEER · RESEARCHER</div>
+        </div>
+        <div class="about-mark" aria-hidden="true">MJ</div>
+      </div>
+
+      <p>
+        I’m a computer engineering student working across machine learning,
+        graph learning, privacy-preserving AI, language models, and practical
+        ML systems.
+      </p>
+
+      <p class="about-muted">
+        I’m interested in the layer between research and deployment:
+        building models, designing reliable pipelines, and turning technical
+        ideas into systems that can actually be used.
+      </p>
+    </div>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-block reveal">
+      <div class="about-label">02 / WORKING ACROSS</div>
+      <div class="about-capabilities">
+        <div class="about-capability">
+          <span>01</span>
+          <strong>Machine Learning</strong>
+          <small>Modeling · evaluation · experimentation</small>
+        </div>
+        <div class="about-capability">
+          <span>02</span>
+          <strong>Graph &amp; Privacy</strong>
+          <small>GNNs · federated learning · differential privacy</small>
+        </div>
+        <div class="about-capability">
+          <span>03</span>
+          <strong>Language &amp; Vision</strong>
+          <small>LLMs · NLP · computer vision · OCR</small>
+        </div>
+        <div class="about-capability">
+          <span>04</span>
+          <strong>ML Systems</strong>
+          <small>MLOps · APIs · deployment · performance</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-block about-approach reveal">
+      <div class="about-label">03 / APPROACH</div>
+      <div class="about-approach-copy">
+        <p>Research should survive contact with reality.</p>
+        <span>
+          That means reproducible experiments, measurable results,
+          clean interfaces, and engineering decisions that hold up beyond
+          the first demo.
+        </span>
+      </div>
+      <div class="about-signature">
+        <span>RESEARCH</span>
+        <b></b>
+        <span>BUILD</span>
+        <b></b>
+        <span>MEASURE</span>
+        <b></b>
+        <span>ITERATE</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.about-section{
+  padding-top:20vh;
+  padding-bottom:18vh;
+}
+
+.about-hero{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:7vw;
+  align-items:end;
+  margin-top:8vh;
+}
+
+.about-display{
+  position:relative;
+  padding:2vw 0 0;
+}
+
+.about-index{
+  display:block;
+  margin-bottom:24px;
+  font:10px var(--mono);
+  letter-spacing:.16em;
+  color:var(--muted);
+}
+
+.about-display h2{
+  margin:0;
+  max-width:950px;
+  font:clamp(58px,7vw,112px) var(--serif);
+  line-height:.84;
+  letter-spacing:-.055em;
+  font-weight:400;
+}
+
+.about-display h2 em{
+  color:var(--acid);
+}
+
+.about-display::after{
+  content:"";
+  position:absolute;
+  left:-8vw;
+  bottom:-7vh;
+  width:260px;
+  height:260px;
+  border:1px solid rgba(167,139,250,.14);
+  border-radius:50%;
+  box-shadow:
+    inset 0 0 80px rgba(167,139,250,.035),
+    0 0 90px rgba(167,139,250,.04);
+  pointer-events:none;
+}
+
+.about-card{
+  position:relative;
+  padding:30px;
+  min-height:305px;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:28px;
+  background:
+    linear-gradient(145deg,rgba(255,255,255,.065),rgba(255,255,255,.012));
+  box-shadow:
+    inset 0 1px rgba(255,255,255,.10),
+    0 30px 80px rgba(0,0,0,.25);
+  overflow:hidden;
+}
+
+.about-card::before{
+  content:"";
+  position:absolute;
+  width:230px;
+  height:230px;
+  right:-80px;
+  top:-100px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(167,139,250,.18),transparent 68%);
+  pointer-events:none;
+}
+
+.about-card-top{
+  position:relative;
+  z-index:1;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:16px;
+  padding-bottom:22px;
+  border-bottom:1px solid var(--line);
+}
+
+.about-label{
+  font:10px var(--mono);
+  letter-spacing:.14em;
+  color:var(--muted);
+}
+
+.about-role{
+  margin-top:7px;
+  font:9px var(--mono);
+  letter-spacing:.14em;
+  color:var(--acid);
+}
+
+.about-mark{
+  width:52px;
+  height:52px;
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(167,139,250,.28);
+  border-radius:50%;
+  font:10px var(--mono);
+  color:var(--acid);
+  background:rgba(167,139,250,.06);
+}
+
+.about-card p{
+  position:relative;
+  z-index:1;
+  margin:24px 0 0;
+  max-width:520px;
+  font-size:16px;
+  line-height:1.65;
+  color:rgba(243,240,232,.92);
+}
+
+.about-card .about-muted{
+  margin-top:14px;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.7;
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1.08fr .92fr;
+  gap:16px;
+  margin-top:16px;
+}
+
+.about-block{
+  position:relative;
+  padding:28px;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:24px;
+  background:rgba(255,255,255,.025);
+}
+
+.about-capabilities{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:0 26px;
+  margin-top:22px;
+}
+
+.about-capability{
+  display:grid;
+  grid-template-columns:32px 1fr;
+  column-gap:10px;
+  row-gap:5px;
+  padding:18px 0;
+  border-top:1px solid var(--line);
+}
+
+.about-capability span{
+  grid-row:1 / span 2;
+  font:9px var(--mono);
+  color:var(--muted);
+  padding-top:3px;
+}
+
+.about-capability strong{
+  font:18px var(--serif);
+  font-weight:400;
+  color:var(--fg);
+}
+
+.about-capability small{
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.5;
+}
+
+.about-approach{
+  display:flex;
+  flex-direction:column;
+  min-height:100%;
+}
+
+.about-approach-copy{
+  margin-top:24px;
+  max-width:510px;
+}
+
+.about-approach-copy p{
+  margin:0;
+  font:clamp(30px,3.3vw,52px) var(--serif);
+  line-height:.92;
+  letter-spacing:-.03em;
+}
+
+.about-approach-copy span{
+  display:block;
+  margin-top:20px;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.7;
+}
+
+.about-signature{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:10px;
+  margin-top:auto;
+  padding-top:30px;
+  font:9px var(--mono);
+  letter-spacing:.12em;
+  color:var(--muted);
+}
+
+.about-signature b{
+  width:4px;
+  height:4px;
+  border-radius:50%;
+  background:var(--acid);
+  box-shadow:0 0 14px rgba(167,139,250,.4);
+}
+
+.about-capability,
+.about-card,
+.about-block{
+  transition:
+    transform .4s cubic-bezier(.22,1,.36,1),
+    border-color .3s ease,
+    background .3s ease;
+}
+
+.about-capability:hover{
+  transform:translateX(5px);
+}
+
+.about-capability:hover strong{
+  color:var(--acid);
+}
+
+.about-card:hover,
+.about-block:hover{
+  border-color:rgba(167,139,250,.18);
+}
+
+@media(max-width:900px){
+  .about-section{
+    padding-top:15vh;
+    padding-bottom:14vh;
+  }
+
+  .about-hero,
+  .about-grid{
+    grid-template-columns:1fr;
+    gap:16px;
+    margin-top:6vh;
+  }
+
+  .about-display h2{
+    font-size:clamp(52px,12vw,92px);
+  }
+
+  .about-display::after{
+    left:auto;
+    right:-10vw;
+    bottom:-10vh;
+    width:190px;
+    height:190px;
+  }
+
+  .about-card{
+    min-height:auto;
+  }
+
+  .about-capabilities{
+    grid-template-columns:1fr;
+  }
+
+  .about-approach{
+    min-height:340px;
+  }
+}
+
+@media(max-width:600px){
+  .about-section{
+    padding-top:12vh;
+    padding-bottom:12vh;
+  }
+
+  .about-display h2{
+    font-size:clamp(48px,14vw,78px);
+  }
+
+  .about-card,
+  .about-block{
+    padding:22px;
+    border-radius:20px;
+  }
+
+  .about-card p{
+    font-size:15px;
+  }
+
+  .about-approach-copy p{
+    font-size:32px;
+  }
+}
+</style>
