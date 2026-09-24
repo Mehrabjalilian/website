@@ -15,7 +15,7 @@
         </div>
         <div class="about-mark" aria-hidden="true">
           <img
-            src="https://raw.githubusercontent.com/mehrabJA/mehrabJA/main/profile.jpg"
+            src="https://avatars.githubusercontent.com/u/149193726?v=4"
             alt="Mehrab Jalilian"
             loading="lazy"
             decoding="async"
@@ -193,15 +193,40 @@
 }
 
 .about-mark{
-  width:52px;
-  height:52px;
-  display:grid;
-  place-items:center;
-  border:1px solid rgba(167,139,250,.28);
+  width:64px;
+  height:64px;
+  flex:0 0 64px;
+  position:relative;
+  overflow:hidden;
+  border:1px solid rgba(167,139,250,.32);
   border-radius:50%;
-  font:10px var(--mono);
-  color:var(--acid);
   background:rgba(167,139,250,.06);
+  box-shadow:
+    0 0 0 5px rgba(167,139,250,.045),
+    0 14px 34px rgba(0,0,0,.28);
+}
+.about-mark::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:50%;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.10);
+  pointer-events:none;
+}
+.about-mark img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center;
+  border-radius:50%;
+  filter:saturate(.96) contrast(1.02);
+  transform:scale(1.01);
+  transition:transform .45s cubic-bezier(.22,1,.36,1),filter .35s ease;
+}
+.about-card:hover .about-mark img{
+  transform:scale(1.07);
+  filter:saturate(1) contrast(1.04);
 }
 
 .about-card p{
@@ -368,6 +393,12 @@
     min-height:auto;
   }
 
+  .about-mark{
+    width:58px;
+    height:58px;
+    flex-basis:58px;
+  }
+
   .about-capabilities{
     grid-template-columns:1fr;
   }
@@ -391,6 +422,12 @@
   .about-block{
     padding:22px;
     border-radius:20px;
+  }
+
+  .about-mark{
+    width:54px;
+    height:54px;
+    flex-basis:54px;
   }
 
   .about-card p{
